@@ -1,0 +1,161 @@
+header {
+    
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+body{
+  background-color: black;
+}
+
+.afacad {
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* You can use 100–700 depending on what's available */
+  font-style: normal;
+}
+
+.topPanelLeft img {
+  height: 40px;
+  
+}
+.navCenter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.topPanelRight img {
+  height: 30px;
+  
+}
+
+nav {  
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; 
+  font-style: normal;       
+  display: flex;          
+  gap: 60px;               
+}
+
+header nav a {
+  text-decoration: underline;
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1;
+}
+h1{
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+}
+
+
+p {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  font-size: 19px;
+}
+
+.sliderPanels {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sldTitle{
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500; 
+  font-style: normal;       
+           
+  gap: 0; 
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.sldContent{
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;                 
+  gap: 0;   
+  font-size: 17px;  
+  margin-bottom: 10px;   
+  text-align: center;       
+}
+
+.box {
+  position: absolute;
+  width: 400px;
+  height: 20%;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1); /* transparent white */
+  backdrop-filter: blur(10px);          /* blur background behind */
+  -webkit-backdrop-filter: blur(10px);  /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* frosted border */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease;
+  margin-top: 45px;
+  padding: 20px 30px;
+}
+
+.sldCenter {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 360px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.sldLeft {
+  left: 25%;
+  transform: translateX(-50%) scale(0.9);
+  z-index: 2;
+  opacity: 0.75;
+}
+
+.sldRight {
+  left: 75%;
+  transform: translateX(-50%) scale(0.9);
+  z-index: 1;
+  opacity: 0.75;
+  padding: 10px 20px;
+}
+
+.imgNText{
+  position: relative;
+  margin: 400px 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ 
+}
+
+.imgLR img{
+  height: 500px;
+  border-radius: 30px;
+  display: block;
+}
+
+.text{
+  position: relative;
+  text-align: center;
+  gap: 0px;
+  transform: translateY(-20px);
+}
